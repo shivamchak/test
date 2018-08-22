@@ -1,0 +1,40 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <servlet>
+      <servlet-name>WelcomeServlet</servlet-name>
+      <servlet-class>com.decipher.bean.ShowAllStudentData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertServlet</servlet-name>
+        <servlet-class>com.decipher.bean.InsertStudent</servlet-class>
+        
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>com.decipher.bean.DeleteStudent</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateStudent</servlet-name>
+        <servlet-class>com.decipher.bean.UpdateStudent</servlet-class>
+    </servlet>
+  
+    <servlet-mapping>
+      <servlet-name>WelcomeServlet</servlet-name>
+      <url-pattern>/showAllStudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertServlet</servlet-name>
+        <url-pattern>/insertStudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/deleteStudent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateStudent</servlet-name>
+        <url-pattern>/updateStudent</url-pattern>
+    </servlet-mapping>
+</web-app>
